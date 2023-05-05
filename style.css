@@ -1,0 +1,94 @@
+/* RESET CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+/* VARIABLES */
+:root {
+  --color-bg:#eff0f3;
+  --color-links: #7f5af0;
+  --color-bg-secondary: rgba(22, 22, 26, 0.8);
+}
+
+/* GLOBAL CSS */
+html {
+	scroll-behavior: smooth;
+}
+body{
+  background-color: var(--color-bg);
+}
+li, h1, h2, h3, h4, h5, h6, a {
+  font-weight: 500;
+}
+a:hover{
+  color: var(--color-links);
+}
+/* HEADER */
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart_user {
+  width: 50px;
+  margin-right: 10px;
+}
+.img-cart-user  {
+  width: 100%;
+}
+.logo {
+  width: 100px;
+}
+.logo >img { 
+  width:100%;
+}
+/* NAV */
+ul {
+  display: flex;
+  gap:10px;
+}
+/* MAIN */
+.slider >img {
+  width: 100vw;
+  max-height: 55vh;
+}
+/* HOT PRODUCTS */
+.products {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.products li {
+  width: 250px;
+  height: 250px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.products div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products img {
+  width: 100%;
+  height: auto;
+}
+
+.products button {
+  color: var(--color-links);
+  font-weight: 600;
+  border: solid;
+  padding:4px;
+  background-color: var(--color-bg-secondary);
+}
