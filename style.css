@@ -57,13 +57,14 @@ nav ul, .categories ul, .cart-user ul, footer ul {
   gap:10px;
   
 }
+/* NAV*/
 nav {
   padding-top: 10px;
-  position: fixed;
-  top:0;
+/*  position: fixed;
+  top:0;*/
   width: 100vw;
   background-color: var(--color-bg-secondary);
-  opacity: 0.5;
+  
 }
 nav ul {
   justify-content: center;
