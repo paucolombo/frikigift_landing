@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Roboto&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assets/favicon.png" />
     <title>FrikiGift</title>
 </head>
@@ -17,9 +19,16 @@
         <div class="logo">
             <img src="assets/logo.png" alt="logo FrikiGift">
         </div>
-        <div class="friki-phrase">
-            <h1>Regala felicidad😄, regala friki🤓</h1>
-        </div>
+        <nav>
+            <input class="hamburguer" type="checkbox" id="menu">
+            <label for="menu">☰</label>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#hot_products">Tienda</a></li>
+                <li><a href="#custom_gifts">Regalos Personalizados</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
         <div class="cart-user">
             <ul>
                 <li><a href="#"><img class="img-cart-user" src="./assets/cart.png" alt="carrito"></a></li>
@@ -27,124 +36,153 @@
             </ul>
         </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#hot_products">Tienda</a></li>
-            <li><a href="#custom_gifts">Regalos Personalizados</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
+   
     <main>
         <div class="slider">
             <img src="./assets/slider.jpg" alt="FrikiGift">
         </div>
         <div class="categories">
             <ul>
-                <li>Harry Potter</li>
-                <li>Disney</li>
-                <li>Series</li>
-                <li>Anime</li>
-                <li>Videogames</li>
-                <li>Super Heroes</li>
+                <li><a href="#">Harry Potter</a></li>
+                <li><a href="#">Disney</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">Videogames</a></li>
+                <li><a href="#">Super Heroes</a></li>
             </ul>
         </div>
-    
-    <article class="hot_products">
-        <h2>Los más vendidos</h2>
-        <ul class="products">
-            <li>
-                <img src="./assets/taza1.png" alt="Taza HP - Reliquias de la Muerte" />
-                <h4>Taza HP - Reliquias de la Muerte</h4>
-                <div>
-                    <p>10€</p>
-                    <button>Añadir al carrito</button>
+
+        <article id="hot_products" class="hot_products">
+            <h2>Los más vendidos</h2>
+            <ul class="products">
+                <li>
+                    <img src="./assets/taza1.png" alt="Taza HP - Reliquias de la Muerte" />
+                    <h4>Taza HP - Reliquias de la Muerte</h4>
+                    <div>
+                        <p>10€</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/taza2.png" alt="Taza Pokemon - Mewtwo" />
+                    <h4>Taza Pokemon - Mewtwo</h4>
+                    <div>
+                        <p>10€</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/taza3.png" alt="Taza Sherlock Holmes" />
+                    <h4>Taza Sherlock Holmes</h4>
+                    <div>
+                        <p>10€</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/taza4.png" alt="Taza Sailor Moon" />
+                    <h4>Taza Sailor Moon</h4>
+                    <div>
+                        <p>10€</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/taza5.png" alt="Taza Rick" />
+                    <h4>Taza Rick and Morty</h4>
+                    <div>
+                        <p>10€</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/taza6.png" alt="Taza Deadpool" />
+                    <h4>Taza Deadpool</h4>
+                    <div>
+                        <p>10€</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/taza7.png" alt="Taza HP - Muggles Away" />
+                    <h4>Taza HP - Muggles Away</h4>
+                    <div>
+                        <p>10€</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/taza8.png" alt="Taza Breaking Bad Coffee" />
+                    <h4>Taza Breaking Bad Coffee</h4>
+                    <div>
+                        <p>10€</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/taza9.png" alt="Taza Alicia - All Mad Here" />
+                    <h4>Taza Alicia - All Mad Here </h4>
+                    <div>
+                        <p>10€</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/taza10.png" alt="Taza Los Simpsons - Marge" />
+                    <h4>Taza Los Simpsons - Marge</h4>
+                    <div>
+                        <p>10€</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <article id="custom_gifts" class="custom_gifts">
+            <div class="text_custom">
+                <h2>Personaliza tu regalo con la imagen que tú quieras</h2>
+                <p>Si quieres realizar un regalo no solo super Friki🤓 sino también único estas en el lugar indicado😉
+                </p>
+                <p>Nos puedes enviar la imagen o frase que tu quieras y nosotros lo ponemos en la taza o camiseta que tu
+                    elijas y asi tendrás el perfecto y más original FrikiGift 🎁 </p>
+                <p>Y no te preocupes si no puedes realizar el diseño tu sólo, nosotros te ayudamos a volver tu idea
+                    realidad! Dejanos un mensaje en el formulario de contacto y te haremos un presupuesto!</p>
+                <p>Recuerda enviarnos la foto o imagen en buena calidad y que los pedidos personalizados demoran 48hs
+                    hábiles.</p>
+            </div>
+            <div class="img_custom_gifts"><img src="assets/customgifts.png" alt="FrikiGift"></div>
+        </article>
+
+        <article id="contact" class="contact">
+            <h2>Contactáctanos</h2>
+            
+            <section class="contact_flex">
+                <div class="contact_form">
+                    <h3>Escribenos</h3>
+            
+                    <form action="mailto:tu_correo@tudominio.com" method="post" enctype="text/plain">
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                        <input type="email" name="correo" placeholder="Correo electrónico" required>
+                        <textarea name="mensaje" placeholder="Escribe aquí tu mensaje" required rows="5"></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
                 </div>
-            </li>
-            <li>
-                <img src="./assets/taza2.png" alt="Taza Pokemon - Mewtwo" />
-                <h4>Taza Pokemon - Mewtwo</h4>
-                <div>
-                    <p>10€</p>
-                    <button>Añadir al carrito</button>
+                <div class="contact_info">
+                  <img class="img_contact" src="assets/contact.png" alt="contacto">  <h3>FrikiGift Info</h3>
+                    <p>Si quieres contactar con nosotros puedes enviarnos un mensaje mediante nuestro formulario de
+                        contacto, o
+                        bien comunicarte con nosotros por whatsapp o email. Te responderemos a la brevedad 😉</p>
+                        <ul>
+                        
+                        <li><img src="assets/wap.png" alt="whatsapp"><a href="https://api.whatsapp.com/send?phone=603047048">603047048</a></li>
+                        
+                        <li><img src="assets/mail.png" alt="mail"><a href=mailto:frikigift@gmail.com target="_blank">frikigift@gmail.com</a></li> 
+                    </ul>
                 </div>
-            </li>
-            <li>
-                <img src="./assets/taza3.png" alt="Taza Sherlock Holmes" />
-                <h4>Taza Sherlock Holmes</h4>
-                <div>
-                    <p>10€</p>
-                    <button>Añadir al carrito</button>
-                </div>
-            </li>
-            <li>
-                <img src="./assets/taza4.png" alt="Taza Sailor Moon" />
-                <h4>Taza Sailor Moon</h4>
-                <div>
-                    <p>10€</p>
-                    <button>Añadir al carrito</button>
-                </div>
-            </li>
-            <li>
-                <img src="./assets/taza5.png" alt="Taza Rick" />
-                <h4>Taza Rick and Morty</h4>
-                <div>
-                    <p>10€</p>
-                    <button>Añadir al carrito</button>
-                </div>
-            </li>
-            <li>
-                <img src="./assets/taza6.png" alt="Taza Deadpool" />
-                <h4>Taza Deadpool</h4>
-                <div>
-                    <p>10€</p>
-                    <button>Añadir al carrito</button>
-                </div>
-            </li>
-            <li>
-                <img src="./assets/taza7.png" alt="Taza HP - Muggles Away" />
-                <h4>Taza HP - Muggles Away</h4>
-                <div>
-                    <p>10€</p>
-                    <button>Añadir al carrito</button>
-                </div>
-            </li>
-            <li>
-                <img src="./assets/taza8.png" alt="Taza Breaking Bad Coffee" />
-                <h4>Taza Breaking Bad Coffee</h4>
-                <div>
-                    <p>10€</p>
-                    <button>Añadir al carrito</button>
-                </div>
-            </li>
-            <li>
-                <img src="./assets/taza9.png" alt="Taza Alicia - All Mad Here" />
-                <h4>Taza Alicia - All Mad Here </h4>
-                <div>
-                    <p>10€</p>
-                    <button>Añadir al carrito</button>
-                </div>
-            </li>
-            <li>
-                <img src="./assets/taza10.png" alt="Taza Los Simpsons - Marge" />
-                <h4>Taza Los Simpsons - Marge</h4>
-                <div>
-                    <p>10€</p>
-                    <button>Añadir al carrito</button>
-                </div>
-            </li>
-        </ul>
-    </article>
-    <article class="custom_gifts">
-        <h2>Personaliza tu regalo con la imagen que tu quieras</h2>
-    </article>
-   
-    <article class="contact">
-        <h2>Contactáctanos</h2>
-    </article>
-    
+            </section>
+        </article>
+
     </main>
-       <footer>
+    <footer>
         <div class="rss">
             <ul>
                 <li><img src="./assets/ig.png" alt="instagram"> </li>
@@ -152,7 +190,13 @@
                 <li><img src="./assets/wap.png" alt="whatsapp" </li>
             </ul>
         </div>
-        <div class="info_store"></div>
+        <div class="legal">
+            <ul>
+                <li><a href="#">Aviso legal</a></li>
+                <li><a href="#">Politica de cookies</a></li>
+                <li><a href="#">Politica de compra y devoluciones</a></li>
+            </ul>
+        </div>
         <div class="copyright"><span>&copy; 2023 FrikiGift. All Right Reserved.</span></div>
     </footer>
 </body>
