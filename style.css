@@ -12,8 +12,8 @@
 /* VARIABLES */
 :root {
   --color-bg: #eff0f3;
-  --color-links: #7f5af0;
-  --color-bg-secondary: rgba(22, 22, 26, 0.8);
+  --color-links: #9d88dc;
+  --color-bg-secondary: rgba(17, 17, 20, 0.8);
   --color-text-secondary: #fffffe;
 }
 
@@ -421,14 +421,15 @@ footer a {
   .hamburguer {
     display: block;
     position: fixed;
-    top: 0;
-    left: 0;
+    padding:1%;
+    top: 1%;
+    left: 1%;
   }
 
   nav label {
     background-color: #fffffe;
     border-radius: 0.2em;
-    padding: 0.1em;
+    padding: 1%;
   }
 
   .hamburguer {
