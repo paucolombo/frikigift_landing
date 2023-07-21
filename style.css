@@ -23,9 +23,7 @@ html {
 }
 
 body {
-
   overflow-x: hidden !important;
-
   background-color: var(--color-bg);
 }
 
@@ -40,17 +38,20 @@ a {
   font-weight: 500;
 }
 
-
-
+/* NAV Y CATEGORIES*/
 /* HEADER */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999999;
 }
 
 .cart-user {
-  z-index: 10000;
   width: 50px;
   margin-right: 10px;
 }
@@ -60,18 +61,18 @@ header {
 }
 
 .logo {
-  z-index: 10000;
-  width: 120px;
+  cursor: pointer;
+  width: 40px;
+  padding-left: 1%;
 }
 
-.logo>img {
+.logo > img {
   width: 100%;
 }
 
 h2 {
   font-size: 2em;
 }
-
 .categories,
 footer {
   padding-left: 20px;
@@ -83,23 +84,12 @@ nav ul,
 footer ul {
   display: flex;
   gap: 10px;
-
 }
 
 /* NAV Y CATEGORIES*/
 .hamburguer,
 nav label {
   display: none;
-}
-
-nav {
-  background-color: var(--color-bg);
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  opacity: 0.8;
 }
 
 nav ul {
@@ -113,6 +103,10 @@ nav ul {
 
 nav li {
   margin: 0 10px;
+}
+nav a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
 }
 
 .categories {
@@ -140,7 +134,7 @@ nav li {
 
 nav a {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 
 /* MAIN */
@@ -151,7 +145,7 @@ nav a {
   overflow: hidden;
 }
 
-.slider>img {
+.slider > img {
   width: 100vw;
   max-height: 50vh;
 }
@@ -219,7 +213,6 @@ nav a {
 
 a:hover {
   color: var(--color-links);
-  box-shadow: 0 0.5em 0.5em -0.4em var(--color-links);
   -webkit-transform: translateY(-0.25em);
   transform: translateY(-0.25em);
 }
@@ -286,8 +279,8 @@ form {
   grid-row-gap: 20px;
 }
 
-input[type="text"],
-input[type="email"],
+input[type='text'],
+input[type='email'],
 textarea {
   padding: 10px;
   border-radius: 5px;
@@ -297,7 +290,7 @@ textarea {
   grid-column: 1 / -1;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   background-color: var(--color-links);
   color: white;
   border: none;
@@ -309,15 +302,15 @@ input[type="submit"] {
   justify-self: center;
 }
 
-input[type="submit"]:hover {
+input[type='submit']:hover {
   background-color: #6b46c1;
 }
 
 label,
-input[type="text"],
-input[type="email"],
+input[type='text'],
+input[type='email'],
 textarea,
-input[type="submit"] {
+input[type='submit'] {
   grid-row: auto;
 }
 
@@ -394,19 +387,18 @@ footer a {
     width: 100%;
   }
 
-  .logo {
-    display: none;
-  }
-
   .cart-user {
     width: 100vw;
     z-index: -1;
+    margin-left: 2%;
+    margin-top: 5px;
   }
-
   .cart-user ul {
-    justify-content: end;
+    justify-content: left;
   }
-
+  main {
+    margin-top: 40px;
+  }
   nav {
     padding: 0;
   }
@@ -421,15 +413,7 @@ footer a {
   .hamburguer {
     display: block;
     position: fixed;
-    padding:1%;
-    top: 1%;
-    left: 1%;
-  }
-
-  nav label {
-    background-color: #fffffe;
-    border-radius: 0.2em;
-    padding: 1%;
+    right: 1%;
   }
 
   .hamburguer {
@@ -439,26 +423,39 @@ footer a {
 
   nav ul {
     display: none;
+    width: 100vw;
     position: absolute;
-    top: 40px;
-    left: 0;
+    top: 30px;
     right: 0;
     background-color: var(--color-bg);
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
+    padding: 3%;
   }
 
   nav li {
     margin: 10px 0;
   }
 
-  nav input[type="checkbox"]:checked+label+ul {
+  nav input[type='checkbox']:checked + label + ul {
     display: flex;
+    animation: fadeInAnimation ease 1s;
   }
 
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   nav label {
+    background-color: #fffffe;
+    border-radius: 0.2em;
     font-size: 1.5em;
     cursor: pointer;
+    top: 0;
   }
 
   .categories {
